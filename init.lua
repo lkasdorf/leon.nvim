@@ -236,7 +236,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.undodir = vim.fn.expand('~/.vim/undodir')
 vim.opt.undofile = true
-vim.wo.relativenumber = false
+vim.wo.relativenumber = true
 vim.opt.spell = false
 -- [[ Basic Keymaps ]]
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
