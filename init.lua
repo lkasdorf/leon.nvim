@@ -1,7 +1,7 @@
 require('keymaps')
 --[[
 
-Leon Kasdorf
+Leon Kasdorf, Kigamboni
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -507,8 +507,9 @@ cmp.setup {
 ---
 require'clipboard-image'.setup {
   markdown = {
-   img_dir = {"content/images", "%:p:h:t", "%:t:r"},
-   img_dir_txt = {"/content/images", "%:p:h:t", "%:t:r"},
+--   img_dir = {"./content/images", "%:p:h:t", "%:t:r"},
+   img_dir = {"%:p:h", "content", "%:t:r"},
+   img_dir_txt = {"content", "%:t:r"},
    img_name = function ()
       vim.fn.inputsave()
       local name = vim.fn.input('Name: ')
